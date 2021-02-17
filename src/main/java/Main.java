@@ -18,6 +18,8 @@ public class Main {
 
         EncryptionRunner.decryptionRunner("244f9efd724e06423af6bfe78fd27c53+2CQI+qYLtSJ3c2c4h8rXA==", "UNzl3IT9mfZAyOIm+ihuTpT5peaw3povOv/aKL5Cp4w=");
 
+        System.out.println("DfRCHRt3jc7eXTS+237bY/DkgxVu48zXAd6CR7yqMGU=".length());
+        System.out.println("446e34bb2d332f2d85163d37000fb8a3".length());
         // Decryption Tests
 
         /*  256 bit AES
