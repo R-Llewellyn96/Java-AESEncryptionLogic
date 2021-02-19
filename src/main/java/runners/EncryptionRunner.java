@@ -45,7 +45,7 @@ public class EncryptionRunner {
         System.out.println("\nProgram Terminated.");
     }
 
-    public static void decryptionRunner(String IvAndAey, String ciphertext) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException, BadPaddingException, InvalidAlgorithmParameterException, NoSuchPaddingException {
+    public static void decryptionRunner(String IvAndAes, String ciphertext) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException, BadPaddingException, InvalidAlgorithmParameterException, NoSuchPaddingException {
 
         // Define encryption model object
         EncryptionModel encryptionModel = new EncryptionModel();
@@ -54,7 +54,7 @@ public class EncryptionRunner {
         encryptionModel.setEncryptionAlgorithm("AES/CBC/PKCS5Padding");
 
         // split IV and Key, [0] = IV, [1] = Key
-        String[] ivAndCiphertextArr = UtilConverters.stripIVFromCiphertext(IvAndAey);
+        String[] ivAndCiphertextArr = UtilConverters.stripIVFromCiphertext(IvAndAes);
 
         encryptionModel.setIvString(ivAndCiphertextArr[0]);
         encryptionModel.setKeyString(ivAndCiphertextArr[1]);

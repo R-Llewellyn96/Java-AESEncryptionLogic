@@ -24,14 +24,15 @@ public class CodeBookService {
     }
 
     // Returns the number of days in a month, selected by user
-    public static int daysInMonth (int monthNo) {
+    public static Integer daysInMonth (int monthNo) {
 
         // Switch statement switching between selected months
         return switch (monthNo) {
             case 2 -> 28; // February assumed as non-Leap Year
             case 4, 6, 9, 11 -> 30;
+            case 1, 3, 5, 7, 8, 10, 12 -> 31;
             case 13 -> 29; // 13 is added as February on Leap Year
-            default -> 31;
+            default -> throw new IllegalStateException("Unexpected Value:" + monthNo);
         };
     }
 
