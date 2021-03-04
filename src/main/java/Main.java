@@ -15,12 +15,19 @@ public class Main {
     public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeyException, BadPaddingException, InvalidAlgorithmParameterException, IllegalBlockSizeException, NoSuchPaddingException {
 
         System.out.println("\nEncrypting...");
-        EncryptionRunner.encryptionRunner("This is a testing message", 0);
+        EncryptionRunner.encryptionRunner("This is my testing message", 0);
 
         System.out.println("\nDecrypting...");
-        EncryptionRunner.decryptionRunner("244f9efd724e06423af6bfe78fd27c53+2CQI+qYLtSJ3c2c4h8rXA==", "UNzl3IT9mfZAyOIm+ihuTpT5peaw3povOv/aKL5Cp4w=");
+        EncryptionRunner.decryptionRunner("9751de75726fa880ba48704c5edd9546VjXM93RccB3xmsF6vT3lDkYpuFqM1ONgyTan7u+LLoQ=", "kCiPd6UeXa7aK6hy3npoMA==");
 
     }
+
+    /*
+    // Key
+    kCiPd6UeXa7aK6hy3npoMA==
+    // IV and Ciphertext
+    9751de75726fa880ba48704c5edd9546VjXM93RccB3xmsF6vT3lDkYpuFqM1ONgyTan7u+LLoQ=
+     */
 
     // End of class
 }
